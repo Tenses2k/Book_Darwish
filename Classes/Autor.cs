@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Book_Darwish.Classes
 {
-   public class Autor
+    public class Autor
     {
         public int Id { get; set; }
         public string FIO { get; set; }
-        public Autor (int Id, string FIO)
+        public Autor(int Id, string FIO)
         {
             this.Id = Id;
             this.FIO = FIO;

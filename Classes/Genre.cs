@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Book_Darwish.Classes
 {
-   public  class Genre
+    public class Genre
     {
         public int Id { get; set; }
         public string Name { get; set; }

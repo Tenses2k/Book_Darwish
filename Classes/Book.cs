@@ -11,9 +11,9 @@ namespace Book_Darwish.Classes
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public  List<Genre> Genres { get; set; }
+        public List<Genre> Genres { get; set; }
 
-        public  List<Autor> Autors { get; set; }
+        public List<Autor> Autors { get; set; }
 
         public int Year { get; set; }
         public Book(int Id, string Name, List<Genre> Genres, List<Autor> Autors, int Year)
@@ -32,6 +32,17 @@ namespace Book_Darwish.Classes
                 1, "Юность в сапогах",
                 Genre.AllGenres().FindAll(x => x.Id == 1),
                 Autor.AllAutors().FindAll(x => x.Id == 1), 2023));
+
+            allBook.Add(new Book(
+                2, "первый",
+                Genre.AllGenres().FindAll(x => x.Id == 1),
+                Autor.AllAutors().FindAll(x => x.Id == 3), 2003));
+
+            allBook.Add(new Book(
+                3, "Хасбик",
+                Genre.AllGenres().FindAll(x => x.Id == 2),
+                Autor.AllAutors().FindAll(x => x.Id == 2), 2013));
+
             return allBook;
         }
         public string ToGenres()
